@@ -8,7 +8,8 @@ app.set('view engine', 'ejs')
 app.use(ejsExpressLayouts)
 
 app.use('/loveit', require('./controllers/loveit'))
-// app.use('/leaveit', require('./controllers/leaveit'))
+app.use('/leaveit', require('./controllers/leaveit'))
+
 
 // ROUTE
 app.get('/', (req, res) => {
@@ -18,16 +19,6 @@ app.get('/', (req, res) => {
 // HTTP method = GET
 // URL pattern = '/animals'
 // localhost:3000/animals
-
-
-
-app.get('/leaveit/movies', (req, res) => {
-    res.render('movies', {movies: ['Morbius', 'Marvel Movies', 'The Last Jedi']})
-})  
-
-app.get('/leaveit/products', (req, res) => {
-    res.render('products', {products: ['Small coffee mugs', 'Ketchup', 'Wallet Chains']})
-})  
 
 
 
