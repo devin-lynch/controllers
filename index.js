@@ -16,9 +16,11 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-// HTTP method = GET
-// URL pattern = '/animals'
-// localhost:3000/animals
+// ROUTE is a url pattern, something you can type in a browser and see a page
+// CONTROLLER organizes similary named routers; groups similar routes
+// ROUTER is a method that express provides to us to create controllers
+
+
 
 
 
